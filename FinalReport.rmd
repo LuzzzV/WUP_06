@@ -56,7 +56,7 @@ barchartGC(~race + cappun,data=mydata, type="percent")
 
 ```
 
-Among the white people more people favor cappun, and among the black people it is the opposite since there are more people who oppose it, while others are almost equally divided.
+Among the white people more people favor cappun, and among the black people it is the opposite since there are more people who oppose it, while others are almost equally divided.  
 
 ## Now with The Most data (fewer variables gives more data points)
 
@@ -68,6 +68,16 @@ Among the white people more people favor cappun, and among the black people it i
 
 
 
+
+
+
+```{r}
+table1 <- xtabs(~race + cappun, data=mydata)
+rowPerc(table1)
+colPerc(table1)
+```
+
+According to the numerical results about 65% of white people favor cappun while about 35% of white people oppose it, and about 43% of black people favor cappun while about 57% of black people oppose it.
 
 ## Now with More data
 

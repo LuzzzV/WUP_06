@@ -48,7 +48,9 @@ barchartGC(~race + cappun,data=mydata)
 barchartGC(~race + cappun,data=mydata, type="percent")
 
 ```
-According to the smaller data there are still more white people who are in favor of cappun compared to black people.  
+
+
+According to the smaller data plot there are twice as many white people who favor cappun rather than oppose it. The majority of the black people are against cappun and other people are somewhere in between since the evidence shows there are still more white people who are in favor of cappun. 
 
 ## Now with LESS data (more variables give less data due to NA's) create the approate graphic displays to answer the question.
 
@@ -149,6 +151,7 @@ fisherXY = function(x, y, confL = 0, printAll=FALSE){
 ```{r}
 fisherXY(mydata$race,mydata$cappun)
 ```
+
 
 According to the smaller data set there we do not have evidence of a statistical difference in attitude toward cappun based on race.  
 
